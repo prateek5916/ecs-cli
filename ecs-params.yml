@@ -1,0 +1,6 @@
+version: 1
+task_defination:
+    services:
+        nginx:
+            cpu_shares: 100
+            mem_limit: 262144000
