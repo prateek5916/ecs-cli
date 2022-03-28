@@ -1,0 +1,14 @@
+version: '3'
+services:
+   webserver:
+     image: nginx:latest
+     container_name: webserver
+     restart: unless-stopped
+     logging:
+        driver: awslogs
+        options:
+            awslogs-group: demo-cluster
+            awslogs-region: us-east-1
+            awslogs-stream-prefix: nginx
+     ports:
+       - "80:80"   
