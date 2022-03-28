@@ -15,25 +15,29 @@
         <li>FullAccessEC2
         <li>FullAccessECS
         <li>FullAccessIAM
-
-Setup
-    AMI Setup
-        Launch EC2 instance with Ubuntu or Amazon Linux AMI 
-        Allow the TCP-80 port in the security group
-        Install Jenkins on that instance(ref-https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04)
-        Install ecs-cli on that instance(ref-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html)
-    
-    Jenkins Instance Setup
-        Configure the Jenkins
-        Give appropriate permission to Jenkins User(Ex-sudoers permission)
-        Create AWS role and attach with AMI to access AWS services
-
-    GitHub Setup
-        Set webhook to trigger the Jenkins Job
-        Put the Jenkinsfile, docker-compose.yml, and ECS-params.yml file into the repository
-    
-    Jenkins Job Setup
-        Install the required Jenkins Plugins
-        Create a pipeline Job
-        Add GitHub repository URL as SCM 
-        Set the GitHub Poll SCM
+        </ul></ul></ul>
+<center><h2>Setup</center></h2>
+<ul>    
+#<li>AMI Setup
+<ul>
+       <li> Launch EC2 instance with Ubuntu or Amazon Linux AMI 
+        <li>Allow the TCP-80 port in the security group
+        <li>Install Jenkins on that instance(ref-https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04)
+        <li>Install ecs-cli on that instance(ref-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html)
+    </ul>
+    #<li>Jenkins Instance Setup
+        <ul><li>Configure the Jenkins
+        <li>Give appropriate permission to Jenkins User(Ex-sudoers permission)
+        <li>Create AWS role and attach with AMI to access AWS services
+</ul>
+  # <li> GitHub Setup
+       <ul><li> Set webhook to trigger the Jenkins Job
+        <li>Put the Jenkinsfile, docker-compose.yml, and ECS-params.yml file into the repository
+    </ul>
+   <li> Jenkins Job Setup
+       <ul><li> Install the required Jenkins Plugins
+        <li>Create a pipeline Job
+        <li>Add GitHub repository URL as SCM 
+        <li>Set the GitHub Poll SCM
+</ul>
+</ul>
