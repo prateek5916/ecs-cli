@@ -18,19 +18,19 @@
         </ul></ul></ul>
 <center><h2>Setup</center></h2>
 <ul>    
-#<li>AMI Setup
+<li>AMI Setup
 <ul>
        <li> Launch EC2 instance with Ubuntu or Amazon Linux AMI 
         <li>Allow the TCP-80 port in the security group
         <li>Install Jenkins on that instance(ref-https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04)
         <li>Install ecs-cli on that instance(ref-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html)
     </ul>
-    #<li>Jenkins Instance Setup
+    <li>Jenkins Instance Setup
         <ul><li>Configure the Jenkins
         <li>Give appropriate permission to Jenkins User(Ex-sudoers permission)
         <li>Create AWS role and attach with AMI to access AWS services
 </ul>
-  # <li> GitHub Setup
+  <li> GitHub Setup
        <ul><li> Set webhook to trigger the Jenkins Job
         <li>Put the Jenkinsfile, docker-compose.yml, and ECS-params.yml file into the repository
     </ul>
