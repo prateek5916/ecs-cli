@@ -1,17 +1,20 @@
 # Launching ECS Cluster with Jenkins pipeline script 
 
-<h1>This repository contains Jenkins pipeline script, docker-compose file for Nginx, and ECS parameters file
-</h1>
+<h3>This repository contains Jenkins pipeline script, docker-compose file for Nginx, and ECS parameters file
+</h3>
 
 
-REQUIREMENTS:-
-    AWS Account
-    EC-2 instance with Jenkins and ECS-CLI configured
-    Docker compose file to launch the task or container according to requirement(Ex-Nginx webserver)
-    An IAM service role or user attached with an EC2 instance running Jenkins with required permissions:-
-        FullAccessEC2
-        FullAccessECS
-        FullAccessIAM
+<center><h2>REQUIREMENTS:-</center></h2>
+<ul>
+   <li> AWS Account</li>
+    <ul>
+    <li>EC-2 instance with Jenkins and ECS-CLI configured
+    <li>Docker compose file to launch the task or container according to requirement(Ex-Nginx webserver)
+    <li>An IAM service role or user attached with an EC2 instance running Jenkins with required permissions:-
+        <ul>
+        <li>FullAccessEC2
+        <li>FullAccessECS
+        <li>FullAccessIAM
 
 Setup
     AMI Setup
