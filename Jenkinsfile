@@ -10,7 +10,9 @@ pipeline{
         stage('Login into ECR')
         {
             steps{
-                sh 'sudo aws ecr get-login-password --region us-east-1 | docker login -S --username AWS --password-stdin 177635644561.dkr.ecr.us-east-1.amazonaws.com'
+                script{
+                    sh 'sudo aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin -S 177635644561.dkr.ecr.us-east-1.amazonaws.com'
+                }
             }
         }
         stage('Build Image')
