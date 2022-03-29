@@ -18,14 +18,14 @@ pipeline{
         stage('Build Image')
         {
             steps{
-                sh 'docker build -t new-nginx-webapp .'
+                sh 'sudo docker build -t new-nginx-webapp .'
             }
         }
         stage('Tag & Push')
         {
             steps{
-                sh 'docker tag new-nginx-webapp:latest 177635644561.dkr.ecr.us-east-1.amazonaws.com/new-nginx-webapp:latest'
-                sh 'docker push 177635644561.dkr.ecr.us-east-1.amazonaws.com/new-nginx-webapp:latest'
+                sh 'sudo docker tag new-nginx-webapp:latest 177635644561.dkr.ecr.us-east-1.amazonaws.com/new-nginx-webapp:latest'
+                sh 'sudo docker push 177635644561.dkr.ecr.us-east-1.amazonaws.com/new-nginx-webapp:latest'
             }
         }
         stage('Configure ECS Cluster')
