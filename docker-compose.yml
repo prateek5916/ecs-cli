@@ -1,7 +1,7 @@
 version: '3'
 services:
    webserver:
-     image: nginx:latest
+     image: 177635644561.dkr.ecr.us-east-1.amazonaws.com/new-nginx-webapp:latest
      container_name: webserver
      restart: unless-stopped
      logging:
