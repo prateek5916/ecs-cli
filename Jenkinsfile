@@ -1,12 +1,12 @@
 pipeline{
     agent any
     stages{
-//         stage('Git Clone'){
-//             steps{
-//                 sh 'git clone https://github.com/prateek5916/ecs-cli.git'
-//                 sh 'cd ecs-cli/'
-//             }
-//         }
+        stage('Git Clone'){
+            steps{
+              //  sh 'git clone https://github.com/prateek5916/ecs-cli.git'
+                sh 'cd ecs-cli/'
+            }
+        }
         stage('Login into ECR')
         {
             steps{
