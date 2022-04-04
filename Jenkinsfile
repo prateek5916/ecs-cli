@@ -41,14 +41,14 @@ pipeline{
                 sh 'sleep 60'
             }
         }
-        stage('Create Task in Cluster')
-        {
-            steps{
+//         stage('Create Task in Cluster')
+//         {
+//             steps{
                 
-                //sh 'sudo octo push --replace-existing --package="ecs-cli.0.0.1.zip" --server="http://18.234.236.139:8080/" --apiKey=" API-W9OQSVL5DZDZEKYJNWJTUMW90X0XX6Q"'
-              //  sh 'ecs-cli compose up --create-log-groups --cluster-config demo-cluster'
-                //sh 'ecs-cli ps --cluster demo-cluster'
-            }
-        }
+//                 //sh 'sudo octo push --replace-existing --package="ecs-cli.0.0.1.zip" --server="http://18.234.236.139:8080/" --apiKey=" API-W9OQSVL5DZDZEKYJNWJTUMW90X0XX6Q"'
+//               //  sh 'ecs-cli compose up --create-log-groups --cluster-config demo-cluster'
+//                 //sh 'ecs-cli ps --cluster demo-cluster'
+//             }
+//         }
     }
 }
