@@ -1,5 +1,8 @@
 pipeline{
     agent any
+     environment{
+            bn = currentBuild.number
+    }
     stages{
         stage('Git Clone'){
             steps{
@@ -53,7 +56,7 @@ pipeline{
          {
              steps{
                 
-                 sh 'octo push --replace-existing --package="lastfinal.1.0.${currentBuild.number}.zip" --server="http://23.22.67.208:8080/" --apiKey="API-W9OQSVL5DZDZEKYJNWJTUMW90X0XX6Q"'
+                 sh 'octo push --replace-existing --package="lastfinal.0.0.${bn}.zip" --server="http://23.22.67.208:8080/" --apiKey="API-W9OQSVL5DZDZEKYJNWJTUMW90X0XX6Q"'
                
              }
          }
