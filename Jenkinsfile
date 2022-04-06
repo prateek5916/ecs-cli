@@ -45,7 +45,7 @@ pipeline{
         stage('Making Zip for Pushing')
         {
             steps{
-               sh  'zip -r lastfinal.0.0.${buildNumber}.zip *'
+               sh  'zip -r lastfinal.0.0.$BUILD_NUMBER.zip *'
             }
             
         }
