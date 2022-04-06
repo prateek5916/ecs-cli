@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage('Git Clone'){
             steps{
+                sh 'rm -rf ecs-cli'
               sh 'git clone https://github.com/prateek5916/ecs-cli.git'
                 //sh 'cd ecs-cli/'
             }
