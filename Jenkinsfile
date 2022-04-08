@@ -53,7 +53,7 @@ pipeline{
          {
              steps{
                 
-                 sh 'octo push --replace-existing --package="lastfinal.0.0.$BUILD_NUMBER.zip" --server="http://23.22.67.208:8080/" --apiKey="API-W9OQSVL5DZDZEKYJNWJTUMW90X0XX6Q"'
+                 sh 'octo push --replace-existing --package="lastfinal.0.0.$BUILD_NUMBER.zip" --server="http://107.21.72.72:8080/" --apiKey="API-W9OQSVL5DZDZEKYJNWJTUMW90X0XX6Q"'
                
              }
          }
